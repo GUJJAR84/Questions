@@ -4,7 +4,7 @@
 
 <p>
   <a href="https://github.com/GUJJAR84/Questions">
-    <img src="https://img.shields.io/badge/Questions%20Solved-25-blue" alt="Solved Questions">
+    <img src="https://img.shields.io/badge/Questions%20Solved-21-blue" alt="Solved Questions">
   </a>
 </p>
 
