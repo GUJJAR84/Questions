@@ -4,7 +4,7 @@
 
 <p>
   <a href="https://github.com/GUJJAR84/Questions">
-    <img src="https://img.shields.io/badge/Questions%20Solved-21-blue" alt="Solved Questions">
+    <img src="https://img.shields.io/badge/Questions%20Solved-24-blue" alt="Solved Questions">
   </a>
 </p>
 
@@ -40,9 +40,6 @@
 
 <hr>
 
-<h3>How to update the badge?</h3>
 
-<p>➡️ The badge currently shows <code>0</code> questions solved.<br>
-Every time you want to <strong>update it</strong>, just change the number in the badge URL!</p>
 
 
