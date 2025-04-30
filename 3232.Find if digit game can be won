@@ -1,0 +1,17 @@
+class Solution {
+    public boolean canAliceWin(int[] nums) {
+        int sumsingle=0;
+        int sumdouble=0;
+        int i=0;
+        while(i<nums.length){
+            if(nums[i]<10){
+                sumsingle+=nums[i];
+            }
+            else{
+                sumdouble+=nums[i];
+            }
+            i++;
+        }
+        return Math.abs(sumdouble-sumsingle)>0;
+    }
+}
