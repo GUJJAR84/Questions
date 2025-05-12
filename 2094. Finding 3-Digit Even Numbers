@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution {
+    public int[] findEvenNumbers(int[] digits) {
+
+        int[] freq = new int[10];
+        int counteven = 0;
+
+
+        for (int digit : digits) {
+            if (digit % 2 == 0) {
+                counteven++;
+            }
+            freq[digit]++;
+        }
+
+
+        if (counteven == 0) {
+            return new int[0];
+        }
+
+        List<Integer> ans = new ArrayList<>();
+
+
+        for (int i = 100; i <= 999; i += 2) {
+            int last = i % 10;
+            int middle = (i / 10) % 10;
+            int first = (i / 100);
+
+
+            int[] tempFreq = freq.clone();
+
+
+            if (--tempFreq[last] < 0) continue;
+            if (--tempFreq[middle] < 0) continue;
+            if (--tempFreq[first] < 0) continue;
+
+
+            ans.add(i);
+        }
+
+
+        int[] result = new int[ans.size()];
+        for (int i = 0; i < ans.size(); i++) {
+            result[i] = ans.get(i);
+        }
+
+        return result;
+    }
+}
